@@ -5,13 +5,16 @@ node-ffmpeg
 
 You can install this module using [npm](http://github.com/isaacs/npm):
 
-	npm install ffmpeg
+	npm install ffmpeg-adanic
+
+It's like the original package instead adding `-max_muxing_queue_size 1024` because some conversion errors
+https://stackoverflow.com/a/50262835/4650625
 
 ## Usage
 
 To start using this library, you must include it in your project and then you can either use the callback function or through the [promise](https://github.com/cujojs/when) library:
 
-	var ffmpeg = require('ffmpeg');
+	var ffmpeg = require('ffmpeg-adanic');
 	
 Use the callback function
 ```js
